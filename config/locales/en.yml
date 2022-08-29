@@ -14,13 +14,14 @@ en:
         title: "Title"
         status: "Status"
         priority: "Priority"
+        executor: "Executor"
         statuses:
           selected: "Selected"
           doing: "Doing"
           done: "Done"
           release:  "Release"
           archive: "Archive"
-  
+
   layouts:
     navbar:
       home: "Home"
@@ -28,6 +29,10 @@ en:
       favorites: "Favorites"
       about_us: "About us"
       contacts: "Contacts"
+  welcome:
+    index:
+      title: "Welcome"
+      head_messge: "Example: Hello message"
   projects:
     update:
       successful: "Project %{project_name} was successful updated"
@@ -39,6 +44,8 @@ en:
       title: "Projects"
       head_messge: "Awailable Projects List"
       create_project: "Create a new project"
+      search_field: "Search by title"
+      search_title: "Title"
     show:
       status: "Current statis is %{status}"
       description_placeholder: "Description is Empty"
@@ -57,6 +64,8 @@ en:
       title: "Edit a task %{task_title}"
     form:
       empty_executor: "Executor not selected"
+    show:
+      marks: "Marks"
   users:
     dashboard:
       title: "Dashboard"
@@ -69,16 +78,28 @@ en:
     destroy:
       not_exist: "Record is not favorited"
       unknow_error: "Unknow error"
+  project_marks:
+    edit:
+      not_exist: "Record is exist"
+  task_project_marks:
+    create:
+      mark_not_exist: "Mark is not exist"
+      project_mark_not_exist: "Record between project and mark is not exist"
+    destroy:
+      mark_not_exist: "Mark is not exist"
+      project_mark_not_exist: "Record between project and mark is not exist"
+      task_project_mark_not_exist: "Current task have not a this mark"
+      
   api:
     v1:
       sessions:
         errors:
           incorrect_email_or_password: "Incorrect email or password"
-          user_not_found_blocked: "User not found or blocked"
+          user_not_found_blocked: "User is not found or blocked"
           no_email_and_password: "Enter email and password"
     errors:
       unauthorized: "You don't have access to that."
-      not_found: "User not found or blocked"
+      not_found: "Record is not found"
       not_bearer_type: "Wrong scheme, you have to use a Bearer"
       blank_token: "Token is nil or empty"
       expired_token: "Token is expired"
@@ -102,6 +123,9 @@ en:
     back: "Back"
     save: "Save"
     add: "Add"
+    search: "Search"
+    clear: "Clear"
+    upload: "Upload"
 
   registrations:
     sign_in: "Sign in"
@@ -117,3 +141,8 @@ en:
   errors:
     not_found: "Record is not found"
     unauthorized: "You don't have access to that."
+    unexpected_error: "Unexpected error, please try again later"
+
+  locales:
+    en: English
+    ru: Russian
